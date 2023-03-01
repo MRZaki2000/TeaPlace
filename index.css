@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 1em;
+}
+/* ---------Header------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+a.logo {
+    color: black;
+    font-size: 1rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+
+/*------------------ NAV-BAR ----------------*/
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #aadfc5;
+    height: 100vh;
+    width: 66%;
+    visibility: hidden;
+    z-index: 1;
+    padding: 0;
+    transform: translate(50%);
+    opacity: 0;
+    transition: all .3s;
+}
+
+nav ul {
+    padding-left: 1em;
+    list-style: none;
+    margin-top: 4em;
+    height: 30vh;
+}
+
+nav ul li {
+    margin-left: -1em;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: .7em 1em;
+}
+
+nav ul li a:hover {
+    background-color: #47946e;
+}
+
+
+.menu {
+    position: absolute;
+    width: 1.5625em;
+    cursor: pointer;
+    visibility: initial;
+    right: -5em;
+    top: .9em;
+    transform: translateX(-380%);
+    opacity: 1;
+}
+
+.exit svg {
+    width: 22px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 1em;
+    cursor: pointer;
+}
+
+.open-nav {
+    visibility: unset;
+    transform: translateX(0);
+    opacity: 1;    
+}
+
+/* -------Main----------- */
+.content-wrapper {
+    margin-top: 1.2em;
+}
+
+.new-div {
+    /* border: 1px solid magenta; */
+    position: relative;
+    min-width: 270px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+main h1 {
+    position: relative;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 0em;
+}
+
+.fern {
+    /* border: 1px solid magenta; */
+    position: absolute;
+    padding: 2em 2em 2.5em 2em;
+    background-image: url("fern.svg");
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transform: rotate(13deg);
+    top: -1.8em;
+    right: 78%;
+}
+
+main p {
+    margin-top: 3em;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+.btn-container {
+    margin-top: 2.2em;
+    display: flex;
+}
+
+.cta {
+    color: white;
+    background-color: #47946e;
+    text-decoration: none;
+    padding: .7em;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2em;
+}
+
+
+
+.plant-container {
+    margin-top: 2em;
+}
+.plant {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+/*
+
+- White Space
+- Color 
+- Contrast 
+- Scale
+- Alignment
+- Typography
+- Visual Hierarchy
+
+*/
+
+/* Ignore this -- for displaying the viewport width */
+.width-container {
+    display: none;
+}
+.display-width {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #E6E6E6;
+    padding: .3em;
+    font-size: .85em;
+}
+
